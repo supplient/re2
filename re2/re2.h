@@ -123,7 +123,7 @@
 //    }
 //
 // -----------------------------------------------------------------------
-// SCANNING TEXT INCREMENTALLY
+// SCANNING TEXT INCREMENTALLY  [NOTE]
 //
 // The "Consume" operation may be useful if you want to repeatedly
 // match regular expressions at the front of a string and skip over
@@ -143,7 +143,7 @@
 // Each successful call to "Consume" will set "var/value", and also
 // advance "input" so it points past the matched text.  Note that if the
 // regular expression matches an empty string, input will advance
-// by 0 bytes.  If the regular expression being used might match
+// by 0 bytes.  [NOTE]If the regular expression being used might match
 // an empty string, the loop body must check for this case and either
 // advance the string or break out of the loop.
 //
